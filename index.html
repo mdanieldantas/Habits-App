@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Habits</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logomarca do Aplicativo Habits" />
+      <button>
+        <img src="./assets/plus.svg" alt="icone sinal de mais roxo" />
+        <div>Registrar meu dia</div>
+      </button>
+    </header>
+
+    <form id="form-habits">
+      <div class="habits">
+        <div class="habit" data-name="run">🏃🏽‍♂️</div>
+        <div class="habit" data-name="water">💧</div>
+        <div class="habit" data-name="food">🍎</div>
+        <div class="habit" data-name="journal">📕</div>
+        <div class="habit" data-name="takePills">💊</div>
+      </div>
+      
+      <div class="days"></div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!--
+          id é o atributo identificador da tag, um RG da tag, depois de colocado não se pode mais repetir ela o seletor dele no css se inicia em uma # hastag
+
+# HTML - Sigla para HyperText Markup Language — Linguagem de Marcação de Hipertexto —, o HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos, por meio dos hipertextos.
+
+# Tags são estruturas de linguagem de marcação contendo instruções, tendo uma marca de início e outra de fim para que o navegador possa renderizar uma página. ex: <head> </head>
+
+# tag <head> A tag head faz parte da estrutura básica do documento, sua finalidade é definir o cabeçalho do documento com informações que não serão exibidas dentro do conteúdo da página
+
+# Atributos são informações que passamos na Tag para que ela se comporte da maneira esperada. Existem atributos globais (que funcionam em todas as Tags) e específicos (que são direcionados para cada Tag, através de especificação). Ex: <img src="./assets/logo.svg" alt="Logomarca do Aplicativo Habits" /> usamos um nome um sinal de igual e aspas duplas.
+  
+-->

@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  background-color: #09090a;
+  color: white;
+
+  height: 100vh; 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 48px;
+  position: fixed;
+  width: 100%;
+background-color: #09090a;
+}
+
+button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+#form-habits {
+  display: flex;
+
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+
+.habits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+
+  color: #a1a1aa;
+
+  text-align: center;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #27272a;
+  border-radius: 8px;
+
+  background: #18181b;
+}
+
+input:checked {
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px){
+  button div {
+    display: none;
+  }
+}
+/* pseudo-selector
+
+# CSS Cascading Style Sheets - Folha de Estilo em Cascata ela é definida por declarações que vão ter propriedades e valores ex: 
+(seletor) body {
+(propriedade) background-color: (valor) #09090a;
+}
+-------------- **Cascata**-----------------------------------------------
+Quando há 2 (ou mais) declarações a última será mais relevante
+----------------------------------------------------------
+# especificidade
+Cada seletor tem um peso e a soma dos pesos, será levada em conta para que determinada declaração seja mais específica
+#id {peso 100} .class {peso 10} element {peso 1}
+A cascata perde prioridade e é priorizada a especificidade da declaração
+---------------------------------------------------------------------------
+- **Tudo são caixas**
+Todos os elementos HTML serão considerados uma caixa, assim como uma caixa de papelão
+- **Caixas possuem determinadas propriedades**
+Conteúdo, Largura, Altura, Borda, Preenchimento (espaço interno), Espaçamento (espaço externo)
+---------------------------------------------------------
+margin: 0;   
+propriedade margin simplesmente adiciona uma margem ao seu elemento. Você pode utilizar qualquer medida Css (px, pt, em, %...) como tamanho da propriedade margin, além disso você pode atribuir valores negativos, mas tenha cuidado com eles. 
+----------------------------------------------
+padding: 0; 
+O padding tem um funcionamento muito similar ao do margin, porém ao invés de dar uma espaçamento externo, ele da uma interno. Vou usar uma imagem para ficar mais claro: 
+----------------------------------------------
+box-sizing: border-box; 
+O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura. Com content-box , ao definir width: 100px , o interior (conteúdo) do elemento terá 100px, mas por termos padding-left: 50px , o tamanho total do elemento será 150px.
+----------------------------------------------
+background-color: #09090a;  background-color (define a cor do fundo);
+----------------------------------------------
+background-image (define uma imagem de fundo); 
+background-repeat (define a maneira como a imagem de fundo é posicionada)
+color: white;
+----------------------------------------------
+height: 100vh; 
+O atribuito height define o tamanho vertical ocupado por uma tag na tela do navegador
+----------------------------------------------
+border-radius: 8px; O  border-radius define o arredondamento das bordas é feito com declaração de dois valores CSS de medida; o primeiro define o eixo horizontal (rx) de 1/4 de uma elipse e o segundo o eixo vertical (ry).
+----------------------------------------------
+border: 1px solid #8b5cf6; 
+CSS border é utilizada para adicionar um contorno ao elemento e está localizada entre o padding e a margin. Trata-se de um recurso que ajuda a melhorar a aparência do elemento com a aplicação de cores, estilo de linha e largura da borda.
+----------------------------------------------
+background-color: transparent; O valor transparent deixa transparente
+----------------------------------------------
+display: flex; 
+display é a disposição dos elementos, a propriedade display define os tipos de exibição internos e externos de um elemento. O tipo externo define a participação de um elemento no layout de fluxo (en-US); o tipo interno define o layout dos filhos. Alguns valores de display são totalmente definidos em suas próprias especificações individuais; por exemplo, o detalhe do que acontece quando display: flex é declarado é definido na especificação CSS Flexible Box Model
+----------------------------------------------
+align-items: center;O align-items: 
+o valor center garante que os flex-items dentro de um elemento com display flex vão centralizar (verticalmente e horizontalmente). 
+----------------------------------------------
+justify-content: space-between; 
+O primeiro item é deslocado para o início do eixo principal, o último é deslocado para o final do eixo principal e os demais são distribuídos uniformemente entre eles
+
+*/
