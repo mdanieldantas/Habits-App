@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Habits é um app para ajudar no acompanhamento de hábitos.
 
-- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
+- [Acesse o projeto finalizado, online](https://mdanieldantas.github.io/habits-app)
 
 
 ## 🔖 Layout
@@ -48,4 +48,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+Feito com ♥ no evento NLW da Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
